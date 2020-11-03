@@ -4,6 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <button>PORTFOLIO</button>
       <button>Home</button>
       <button>About me</button>
       <button>Ability</button>
