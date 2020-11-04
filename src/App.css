@@ -28,6 +28,17 @@
   color: #61dafb;
 }
 
+.logo {
+  color: white;
+  background-color: transparent;
+  font-size: 25px;
+  font-family: Arial;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 30px 200px 30px;
+  border-style: none;
+}
+
 .button {
   color: #c8dbc8;
   background-color: transparent;
