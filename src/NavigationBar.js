@@ -9,7 +9,6 @@ class NavigationBar extends Component {
           <Logo>PORTFOLIO</Logo>
         </div>
         <div>
-          <Button>Home</Button>
           <Button>About</Button>
           <Button>Ability</Button>
           <Button>Portfolio</Button>
@@ -33,7 +32,7 @@ const Navi = styled.div`
 const Logo = styled.button`
   color: white;
   background-color: transparent;
-  
+
   font-size: 25px;
   font-family: Roboto;
   font-weight: bold;
