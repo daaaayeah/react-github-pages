@@ -3,35 +3,19 @@ import './App.css';
 
 function App() {
   const logoStyle = {
-    color: "WHITE",
-    backgroundColor: "TRANSPARENT",
+    color: "white",
+    backgroundColor: "transparent",
     fontSize: "25px",
     fontFamily: "Arial",
     fontWeight: "bold",
     padding: "30px 200px 30px",
     borderStyle: "none"
   };
-  const menuStyle = {
-    color: "#c8dbc8",
-    backgroundColor: "TRANSPARENT",
-    fontSize: "15px",
-    fontFamily: "Arial",
-    padding: "30px 20px 30px 20px",
-    borderStyle: "none"
-  };
-  const onClickStyle = {
-    color: "WHITE",
-    backgroundColor: "TRANSPARENT",
-    fontSize: "15px",
-    fontFamily: "Arial",
-    padding: "30px 20px 30px 20px",
-    borderStyle: "none"
-  };
 
   return (
     <div className="App">
 
-      <div style={{backgroundColor: "GREEN", display: "flex", justifyContent: "space-between"}}>
+      <div style={{backgroundColor: "green", display: "flex", justifyContent: "space-between"}}>
         <div>
           <button style={logoStyle}>
             PORTFOLIO
@@ -39,19 +23,19 @@ function App() {
         </div>
 
         <div style={{paddingRight: "200px"}}>
-          <button style={menuStyle}>
+          <button className="button">
             Home
           </button>
-          <button style={menuStyle}>
+          <button className="button">
             About
           </button>
-          <button style={menuStyle}>
+          <button className="button">
             Ability
           </button>
-          <button style={menuStyle}>
+          <button className="button">
             Portfolio
           </button>
-          <button style={menuStyle}>
+          <button className="button">
             Contact
           </button>
         </div>

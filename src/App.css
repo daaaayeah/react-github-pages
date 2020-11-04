@@ -28,6 +28,24 @@
   color: #61dafb;
 }
 
+.button {
+  color: #c8dbc8;
+  background-color: transparent;
+  font-size: 15px;
+  font-family: Arial;
+  padding: 35px 20px 35px 20px;
+  border-style: none;
+}
+
+.button:hover {
+  color: white;
+  background-color: transparent;
+  font-size: 15px;
+  font-family: Arial;
+  padding: 35px 20px 35px 20px;
+  border-style: none;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
