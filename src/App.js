@@ -13,21 +13,11 @@ function App() {
         </div>
 
         <div style={{paddingRight: "200px"}}>
-          <button className="button">
-            Home
-          </button>
-          <button className="button">
-            About
-          </button>
-          <button className="button">
-            Ability
-          </button>
-          <button className="button">
-            Portfolio
-          </button>
-          <button className="button">
-            Contact
-          </button>
+          <button className="button">Home</button>
+          <button className="button">About</button>
+          <button className="button">Ability</button>
+          <button className="button">Portfolio</button>
+          <button className="button">Contact</button>
         </div>
       </div>
       
