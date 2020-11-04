@@ -4,56 +4,60 @@ import styled from 'styled-components';
 class NavigationBar extends Component {
   render() {
     return (
-        <Navi>
-            <Logo>PORTFOLIO</Logo>
-            <Menu>
-              <Button>Home</Button>
-              <Button>About</Button>
-              <Button>Ability</Button>
-              <Button>Portfolio</Button>
-              <Button>Contact</Button>
-            </Menu>
-        </Navi>
+      <Navi>
+        <div>
+          <Logo>PORTFOLIO</Logo>
+        </div>
+        <div>
+          <Button>Home</Button>
+          <Button>About</Button>
+          <Button>Ability</Button>
+          <Button>Portfolio</Button>
+          <Button>Contact</Button>
+        </div>
+      </Navi>
     )
   }
 }
 
 const Navi = styled.div`
   background-color: green;
+  height: 85px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
 `;
 
 const Logo = styled.button`
   color: white;
   background-color: transparent;
+
   font-size: 25px;
   font-family: Roboto;
   font-weight: bold;
   letter-spacing: 3px;
-  padding: 30px 200px 30px;
+  
   border-style: none;
-  cursor: pointer;
   outline: none;
-`;
-
-const Menu = styled.div`
-  padding-right: 200px;
+  cursor: pointer;
 `;
 
 const Button = styled.button`
   color: #c8dbc8;
-  background-color: transparent;
-  font-size: 15px;
-  font-family: Arial;
-  padding: 37px 20px 37px 20px;
-  border-style: none;
-  cursor: pointer;
-  outline: none;
-
   &:hover {
     color: white;
   }
+  background-color: transparent;
+
+  font-size: 15px;
+  font-family: Arial;
+
+  margin-left: 30px;
+  border-style: none;
+  outline: none;
+  cursor: pointer;
 `;
 
 export default NavigationBar;
