@@ -41,6 +41,7 @@ const Logo = styled.button`
   font-family: Roboto;
   font-weight: bold;
   letter-spacing: 3px;
+  
   border-style: none;
   outline: none;
   cursor: pointer;
