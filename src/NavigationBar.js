@@ -40,11 +40,6 @@ const Logo = styled.button`
   font-family: Roboto;
   font-weight: bold;
   letter-spacing: 3px;
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> parent of ff50fb8... Modify navigation bar CSS
   border-style: none;
   outline: none;
   cursor: pointer;
