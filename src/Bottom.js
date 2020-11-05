@@ -4,11 +4,16 @@ import styled from 'styled-components';
 class Bottom extends Component {
     render() {
         return (
-            <Contact>
-                <div>
-                    <P>CONTACT</P>
-                </div>
-            </Contact>
+            <div>
+                <Contact>
+                    <div>
+                        <P>CONTACT</P>
+                    </div>
+                </Contact>
+                <CopyRight>
+                    COPYRIGHT INFORMATION GOES HERE © 2020. ALL RIGHTS RESERVED
+                </CopyRight>
+            </div>
         )
     }
 }
@@ -25,6 +30,18 @@ const P = styled.p`
   background-color: transparent;
   font-size: 25px;
   font-family: Roboto;
+`;
+
+const CopyRight = styled. p`
+  color: #c8dbc8;
+  background-color: green;
+  font-size: 13px;
+  font-family: Roboto;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export default Bottom;
