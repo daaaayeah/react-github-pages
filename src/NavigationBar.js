@@ -41,10 +41,14 @@ const Logo = styled.button`
   font-weight: bold;
   letter-spacing: 3px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
   
 >>>>>>> parent of ff50fb8... Modify navigation bar CSS
+=======
+
+>>>>>>> d84c92525913b01da1e8e91f0a90bb734adad1e0
   border-style: none;
   outline: none;
   cursor: pointer;
