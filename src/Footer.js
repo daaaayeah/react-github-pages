@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-class Bottom extends Component {
+class Footer extends Component {
     render() {
         return (
             <div>
@@ -44,4 +44,4 @@ const CopyRight = styled. p`
   justify-content: center;
 `;
 
-export default Bottom;
+export default Footer;

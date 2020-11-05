@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-class NavigationBar extends Component {
+class Header extends Component {
   render() {
     return (
-      <Navi>
+      <Div>
         <div>
           <Logo>yENGINEER</Logo>
         </div>
         <div>
-          <Button>About</Button>
-          <Button>Ability</Button>
-          <Button>Portfolio</Button>
-          <Button>Contact</Button>
+          <Menu>About</Menu>
+          <Menu>Ability</Menu>
+          <Menu>Portfolio</Menu>
+          <Menu>Contact</Menu>
         </div>
-      </Navi>
+      </Div>
     )
   }
 }
 
-const Navi = styled.div`
+const Div = styled.div`
   background-color: green;
   height: 85px;
   position: fixed;
@@ -47,7 +47,7 @@ const Logo = styled.button`
   cursor: pointer;
 `;
 
-const Button = styled.button`
+const Menu = styled.button`
   color: #c8dbc8;
   &:hover {
     color: white;
@@ -63,4 +63,4 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-export default NavigationBar;
+export default Header;

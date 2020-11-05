@@ -1,13 +1,13 @@
-import NavigationBar from './NavigationBar';
-import Main from './Main';
-import Bottom from './Bottom';
+import Header from './Header';
+import Body from './Body';
+import Footer from './Footer';
 
 function App() {
   return (
     <div>
-      <NavigationBar />
-      <Main />
-      <Bottom />
+      <Header />
+      <Body />
+      <Footer />
     </div>
   );
 }

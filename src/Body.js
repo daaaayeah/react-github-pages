@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-class Main extends Component {
+class Body extends Component {
     render() {
       return (
         <Div>
@@ -15,4 +15,4 @@ const Div = styled.div`
 
 `;
 
-export default Main;
+export default Body;
