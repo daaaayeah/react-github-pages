@@ -6,7 +6,7 @@ class NavigationBar extends Component {
     return (
       <Navi>
         <div>
-          <Logo>PORTFOLIO</Logo>
+          <Logo>yENGINEER</Logo>
         </div>
         <div>
           <Button>About</Button>
