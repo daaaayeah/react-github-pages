@@ -22,6 +22,9 @@ class NavigationBar extends Component {
 const Navi = styled.div`
   background-color: green;
   height: 85px;
+  position: fixed;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
