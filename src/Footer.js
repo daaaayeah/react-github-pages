@@ -19,7 +19,7 @@ class Footer extends Component {
 }
 
 const Contact = styled.div`
-  background-color: black;
+  background-color: gray;
   height: 300px;
   width: 100%;
   display: inline-block;
@@ -32,7 +32,7 @@ const P = styled.p`
   font-family: Roboto;
 `;
 
-const CopyRight = styled. p`
+const CopyRight = styled.p`
   color: #c8dbc8;
   background-color: green;
   font-size: 13px;
