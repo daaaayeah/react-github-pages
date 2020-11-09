@@ -2,6 +2,19 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {backgroundColor: 'transparent', textColor: '#c8dbc8'};
+    this.isSelected = this.isSelected.bind(this);
+  }
+
+  isSelected = () => {
+    this.setState({
+      backgroundColor: 'transparent',
+      textColor: 'white'
+    });
+  }
+
   render() {
     return (
       <Div>
@@ -9,7 +22,7 @@ class Header extends Component {
           <Logo>yENGINEER</Logo>
         </div>
         <div>
-          <Menu>About</Menu>
+          <button style={{backgroundColor: this.state.backgroundColor, color: this.state.textColor}} onClick={this.isSelected}>About</button>
           <Menu>Ability</Menu>
           <Menu>Portfolio</Menu>
           <Menu>Contact</Menu>
