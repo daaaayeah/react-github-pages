@@ -1,35 +1,21 @@
-import React, { Component } from 'react';
+//import React, { useState } from 'react';
 import styled from 'styled-components';
 
-class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {backgroundColor: 'transparent', textColor: '#c8dbc8'};
-    this.isSelected = this.isSelected.bind(this);
-  }
+function Header() {
+  return (
+    <Div>
+      <div>
+        <Logo>DEVELOPER</Logo>
+      </div>
+      <div>
+        <Menu>About</Menu>
+        <Menu>Ability</Menu>
+        <Menu>Portfolio</Menu>
+        <Menu>Contact</Menu>
+      </div>
+    </Div>
+  )
 
-  isSelected = () => {
-    this.setState({
-      backgroundColor: 'transparent',
-      textColor: 'white'
-    });
-  }
-
-  render() {
-    return (
-      <Div>
-        <div>
-          <Logo>yENGINEER</Logo>
-        </div>
-        <div>
-          <button style={{backgroundColor: this.state.backgroundColor, color: this.state.textColor}} onClick={this.isSelected}>About</button>
-          <Menu>Ability</Menu>
-          <Menu>Portfolio</Menu>
-          <Menu>Contact</Menu>
-        </div>
-      </Div>
-    )
-  }
 }
 
 const Div = styled.div`
@@ -53,7 +39,7 @@ const Logo = styled.button`
   font-size: 25px;
   font-family: Roboto;
   font-weight: bold;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   
   border-style: none;
   outline: none;
@@ -68,7 +54,6 @@ const Menu = styled.button`
   background-color: transparent;
 
   font-size: 15px;
-  font-family: Arial;
 
   margin-left: 30px;
   border-style: none;
