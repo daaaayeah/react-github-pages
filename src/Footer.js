@@ -4,44 +4,76 @@ import styled from 'styled-components';
 class Footer extends Component {
     render() {
         return (
-            <div>
-                <Contact>
-                    <div>
-                        <P>CONTACT</P>
-                    </div>
-                </Contact>
+            <Div>
+                <div>
+                    <Contact>CONTACT</Contact>
+                    <Comment>If you have any questions,</Comment>
+                    <Comment>please leave your message here.</Comment>
+                </div>
+                <div>
+                    <Input type="text" placeholder="NAME" />
+                    <Input type="text" placeholder="E-MAIL" />
+                </div>
+                <div>
+                    <Input type="text" placeholder="MESSAGE" />
+                    <Input type="submit" value="SUBMIT" />
+                </div>
+
                 <CopyRight>
                     COPYRIGHT INFORMATION GOES HERE © 2020. ALL RIGHTS RESERVED
                 </CopyRight>
-            </div>
+            </Div>
         )
     }
 }
 
-const Contact = styled.div`
-  background-color: gray;
-  height: 300px;
-  width: 100%;
+const Div = styled.div`
+  background-color: green;
+  height: 255px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: inline-block;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
 `;
 
-const P = styled.p`
+const Contact = styled.p`
   color: white;
   background-color: transparent;
-  font-size: 25px;
-  font-family: Roboto;
+  font-size: 23px;
+  margin: 40px 0px 30px 0px;
+`;
+
+const Comment = styled.p`
+  color: white;
+  font-size: 15px;
+  margin: 0;
+`;
+
+const Input = styled.input`
+  color: green;
+  &::placeholder {
+      color: green;
+  }
+  background-color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+  margin: 10px;
+  
+  border-style: none;
+  outline: none;
 `;
 
 const CopyRight = styled.p`
   color: #c8dbc8;
-  background-color: green;
+  background-color: transparent;
   font-size: 13px;
-  font-family: Roboto;
-  height: 50px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+  position: fixed;
+  bottom: 0;
+  padding: 12px 0px 12px 0px;
 `;
 
 export default Footer;
