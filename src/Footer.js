@@ -7,18 +7,19 @@ class Footer extends Component {
             <Div>
                 <div>
                     <Contact>CONTACT</Contact>
-                    <Comment>If you have any questions,</Comment>
-                    <Comment>please leave your message here.</Comment>
+                    <P>If you have any questions,</P>
+                    <P>please leave your message here.</P>
+                </div>
+                <div style={{margin: '40px 0px', width: '250px'}}>
+                    <Input type="text" placeholder="NAME" style={{width: '190px'}}/>
+                    <Input type="text" placeholder="E-MAIL" style={{width: '190px'}}/>
+                </div>
+                <div style={{margin: '40px 0px'}}>
+                    <Input type="text" placeholder="MESSAGE" style={{width: '420px', height: '75px'}}/>
                 </div>
                 <div>
-                    <Input type="text" placeholder="NAME" />
-                    <Input type="text" placeholder="E-MAIL" />
+                    <Button type="submit">SUBMIT</Button>
                 </div>
-                <div>
-                    <Input type="text" placeholder="MESSAGE" />
-                    <Input type="submit" value="SUBMIT" />
-                </div>
-
                 <CopyRight>
                     COPYRIGHT INFORMATION GOES HERE © 2020. ALL RIGHTS RESERVED
                 </CopyRight>
@@ -34,7 +35,7 @@ const Div = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  display: inline-block;
+  display: flex;
   padding-left: 12.5%;
   padding-right: 12.5%;
 `;
@@ -43,12 +44,15 @@ const Contact = styled.p`
   color: white;
   background-color: transparent;
   font-size: 23px;
-  margin: 40px 0px 30px 0px;
+  font-family: Arial;
+  margin: 60px 0px 30px 0px;
 `;
 
-const Comment = styled.p`
+const P = styled.p`
   color: white;
   font-size: 15px;
+  font-family: Arial;
+  width: 280px;
   margin: 0;
 `;
 
@@ -59,11 +63,26 @@ const Input = styled.input`
   }
   background-color: white;
   font-size: 15px;
+  position: relative;
   padding: 10px 20px;
   margin: 10px;
   
   border-style: none;
   outline: none;
+`;
+
+const Button = styled.button`
+  color: green;
+  background-color: white;
+  font-size: 15px;
+  height: 95px;
+  padding: 10px 20px;
+  margin: 50px 0px;
+  
+  display: flex;
+  border-style: none;
+  outline: none;
+  cursor: pointer;
 `;
 
 const CopyRight = styled.p`
