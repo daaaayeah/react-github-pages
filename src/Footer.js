@@ -52,7 +52,7 @@ const P = styled.p`
   color: white;
   font-size: 15px;
   font-family: Arial;
-  width: 280px;
+  width: 300px;
   margin: 0;
 `;
 
@@ -65,7 +65,7 @@ const Input = styled.input`
   font-size: 15px;
   position: relative;
   padding: 10px 20px;
-  margin: 10px;
+  margin: 15px 15px 5px 15px;
   
   border-style: none;
   outline: none;
@@ -73,14 +73,14 @@ const Input = styled.input`
 
 const Button = styled.button`
   color: green;
-  background-color: white;
+  background-color: #c8dbc8;
   font-size: 15px;
+  font-weight: bold;
   height: 95px;
-  padding: 10px 20px;
-  margin: 50px 0px;
+  padding: 10px 25px;
+  margin: 55px 10px;
   
-  display: flex;
-  border-style: none;
+  border: none;
   outline: none;
   cursor: pointer;
 `;
