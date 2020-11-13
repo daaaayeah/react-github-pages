@@ -15,7 +15,7 @@ class Footer extends Component {
                     <Input type="text" placeholder="E-MAIL" style={{width: '190px'}}/>
                 </div>
                 <div style={{margin: '40px 0px'}}>
-                    <Input type="text" placeholder="MESSAGE" style={{width: '420px', height: '75px'}}/>
+                    <Textarea type="text" placeholder="MESSAGE" style={{width: '420px', height: '75px'}}/>
                 </div>
                 <div>
                     <Button type="submit">SUBMIT</Button>
@@ -67,6 +67,22 @@ const Input = styled.input`
   padding: 10px 20px;
   margin: 15px 15px 5px 15px;
   
+  border-style: none;
+  outline: none;
+`;
+
+const Textarea = styled.textarea`
+  color: green;
+  &::placeholder {
+      color: green;
+  }
+  background-color: white;
+  font-size: 15px;
+  font-family: arial;
+  position: relative;
+  padding: 10px 20px;
+  margin: 15px 15px 5px 15px;
+
   border-style: none;
   outline: none;
 `;
