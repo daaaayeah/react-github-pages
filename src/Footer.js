@@ -9,20 +9,18 @@ class Footer extends Component {
                     <Contact>CONTACT</Contact>
                     <P>If you have any questions,</P>
                     <P>please leave your message here.</P>
+                    <CopyRight>COPYRIGHT INFORMATION GOES HERE © 2020. ALL RIGHTS RESERVED</CopyRight>
                 </div>
-                <div style={{margin: '40px 0px', width: '250px'}}>
-                    <Input type="text" placeholder="NAME" style={{width: '190px'}}/>
-                    <Input type="text" placeholder="E-MAIL" style={{width: '190px'}}/>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ margin: '40px 0px', width: '250px' }}>
+                    <Input type="text" placeholder="NAME" style={{ width: '190px' }} />
+                    <Input type="text" placeholder="E-MAIL" style={{ width: '190px' }} />
+                  </div>
+                  <div style={{ margin: '40px 0px' }}>
+                    <Textarea type="text" placeholder="MESSAGE" style={{ width: '420px', height: '75px' }} />
+                  </div>
+                  <Button type="submit">SUBMIT</Button>
                 </div>
-                <div style={{margin: '40px 0px'}}>
-                    <Textarea type="text" placeholder="MESSAGE" style={{width: '420px', height: '75px'}}/>
-                </div>
-                <div>
-                    <Button type="submit">SUBMIT</Button>
-                </div>
-                <CopyRight>
-                    COPYRIGHT INFORMATION GOES HERE © 2020. ALL RIGHTS RESERVED
-                </CopyRight>
             </Div>
         )
     }
@@ -36,6 +34,7 @@ const Div = styled.div`
   left: 0;
   right: 0;
   display: flex;
+  justify-content: space-between;
   padding-left: 12.5%;
   padding-right: 12.5%;
 `;
@@ -52,7 +51,6 @@ const P = styled.p`
   color: white;
   font-size: 13px;
   font-family: Arial;
-  width: 300px;
   margin: 0;
 `;
 
@@ -63,7 +61,6 @@ const Input = styled.input`
   }
   background-color: white;
   font-size: 15px;
-  position: relative;
   padding: 10px 20px;
   margin: 15px 15px 5px 15px;
   
@@ -79,7 +76,6 @@ const Textarea = styled.textarea`
   background-color: white;
   font-size: 15px;
   font-family: arial;
-  position: relative;
   padding: 10px 20px;
   margin: 15px 15px 5px 15px;
 
