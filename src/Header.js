@@ -21,7 +21,8 @@ function Header() {
 const Div = styled.div`
   background-color: green;
   height: 85px;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
