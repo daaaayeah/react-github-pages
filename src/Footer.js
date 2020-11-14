@@ -50,7 +50,7 @@ const Contact = styled.p`
 
 const P = styled.p`
   color: white;
-  font-size: 15px;
+  font-size: 13px;
   font-family: Arial;
   width: 300px;
   margin: 0;
@@ -94,7 +94,7 @@ const Button = styled.button`
   font-weight: bold;
   height: 95px;
   padding: 10px 25px;
-  margin: 55px 10px;
+  margin: 55px 4px;
   
   border: none;
   outline: none;
