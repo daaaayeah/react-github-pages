@@ -12,8 +12,8 @@ class Body extends Component {
             <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
               <img
                 src={programmingImage}
-                width='500'
-                height='250'
+                width='500px'
+                height='250px'
                 alt=''
               />
               <div>
@@ -25,6 +25,12 @@ class Body extends Component {
                 <P>세상을 움직이는 사람이 되고 싶습니다.</P>
               </div>
             </div>
+            <Subtitle>My History</Subtitle>
+            <ul>
+              <li>2020</li>
+              <li>2019</li>
+              <li>2018</li>
+            </ul>
           </Section>
         </Div>
       )
