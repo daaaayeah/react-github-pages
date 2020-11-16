@@ -4,7 +4,7 @@ import Footer from './Footer';
 
 function App() {
   return (
-    <div>
+    <div style={{ height: '100%', overflowY: 'scroll' }}>
       <Header />
       <Body />
       <Footer />
