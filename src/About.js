@@ -81,9 +81,4 @@ const P = styled.p`
 	margin: 3px;
 `;
 
-const Year = styled.p`
-    color: green;
-    
-`;
-
 export default Body;
