@@ -5,60 +5,56 @@ class Ability extends Component {
     render() {
         return (
             <Div>
-                <Title>____</Title>
-                <Title>ABILITY</Title>
-                <Content>
-                    <div>
-                        <div style={{ marginTop: "50px", display: "flex", justifyContent: "space-between" }}>
-                            <Box style={{ backgroundColor: "orange" }}>
-                                <Item>C</Item>
-                                <Item>C#</Item>
-                            </Box>
-                            <Box style={{ backgroundColor: "orange" }}>
-                                <Item>Python</Item>
-                            </Box>
-                            <Box style={{ backgroundColor: "#ffdead" }}>
-                                <Item>Java</Item>
-                            </Box>
-                            <Box style={{ backgroundColor: "#ffdead" }}>
-                                <Item>HTML</Item>
-                                <Item>CSS</Item>
-                                <Item>JavaScript</Item>
-                                <Item>React</Item>
-                            </Box>
-                            <Box style={{ backgroundColor: "oldlace" }}>
-                                <Item>OpenGL</Item>
-                                <Item>WebGL</Item>
-                            </Box>
-                            <Box style={{ backgroundColor: "white" }}>
-                                <Item>SQL</Item>
-                            </Box>
-                        </div>
-                    </div>
-                </Content>
-                <Content>
+                <Title>________</Title>
+                <Title>PROGRAMMING ABILITY</Title>
+                <div style={{ margin: "50px 0px 50px 0px", display: "flex", justifyContent: "space-between" }}>
+                    <Box style={{ backgroundColor: "orange", borderRadius: "50%" }}>
+                        <Item>C</Item>
+                        <Item>C#</Item>
+                    </Box>
+                    <Box style={{ backgroundColor: "#ffdead", borderRadius: "50%" }}>
+                        <Item>HTML</Item>
+                        <Item>CSS</Item>
+                        <Item>JavaScript</Item>
+                        <Item>React</Item>
+                    </Box>
+                    <Box style={{ backgroundColor: "#ffdead", borderRadius: "50%" }}>
+                        <Item>Java</Item>
+                    </Box>
+                    <Box style={{ backgroundColor: "oldlace", borderRadius: "50%" }}>
+                        <Item>OpenGL</Item>
+                        <Item>WebGL</Item>
+                    </Box>
+                    <Box style={{ backgroundColor: "orange", borderRadius: "50%" }}>
+                        <Item>Python</Item>
+                    </Box>
+                    <Box style={{ backgroundColor: "white", borderRadius: "50%" }}>
+                        <Item>SQL</Item>
+                    </Box>
+                </div>
+                <div  style={{ margin: "50px 0px 50px 0px" }}>
                     {/* <Subtitle>&lt;사용 툴&nbsp;/&gt;</Subtitle> */}
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
-                        <Box>
-                            <Item>Visual Studio</Item>
-                        </Box>
-                        <Box>
-                            <Item>Jupyter notebook</Item>
-                        </Box>
-                        <Box>
-                            <Item>Eclipse</Item>
-                        </Box>
-                        <Box>
-                            <Item>MySQL workbench</Item>
-                        </Box>
-                        <Box>
+                        <Box style={{ backgroundColor: "oldlace"}} >
                             <Item>Android Studio</Item>
                         </Box>
-                        <Box>
+                        <Box style={{ backgroundColor: "#ffdead"}} >
+                            <Item>Eclipse</Item>
+                        </Box>
+                        <Box style={{ backgroundColor: "orange"}} >
+                            <Item>Jupyter notebook</Item>
+                        </Box>
+                        <Box style={{ backgroundColor: "oldlace"}} >
+                            <Item>MySQL workbench</Item>
+                        </Box>
+                        <Box style={{ backgroundColor: "white"}} >
                             <Item>Unity</Item>
                         </Box>
+                        <Box style={{ backgroundColor: "orange"}} >
+                            <Item>Visual Studio</Item>
+                        </Box>
                     </div>
-                </Content>
+                </div>
             </Div>
         );
     }
@@ -67,13 +63,7 @@ class Ability extends Component {
 const Div = styled.div`
 	background-color: white;
     padding: 1px 12.5% 1px 12.5%;
-    margin: 1%;
-`;
-
-const Content = styled.div`
-    // display: flex;
-    // justifyContent: "space-between";
-    margin: 50px 0px 50px 0px;
+    margin: 1% 0 1% 0;
 `;
 
 const Title = styled.p`
@@ -84,26 +74,22 @@ const Title = styled.p`
 `;
 
 const Box = styled.div`
-    height: 150px;
-    width: 150px;
     font-size: 17px;
     text-align: center;
+    
+    height: 150px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-style: solid;
-    border-width: 1px;
+
+    box-shadow: 5px 5px 10px darkolivegreen;
 `;
 
 const Item = styled.p`
+    font-size: 15px;
+    font-family: Verdana;
     margin: 0;
-`;
-
-const P = styled.p`
-	color: black;
-	font-size: 15px;
-    font-family: 고딕;
-	margin: 3px;
 `;
 
 export default Ability;
