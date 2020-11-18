@@ -3,7 +3,7 @@ import styled from "styled-components";
 import programmingImage from "./programming.jpg";
 import myImage from "./I.jpg";
 
-class Body extends Component {
+class About extends Component {
     render() {
         return (
             <Div>
@@ -11,7 +11,7 @@ class Body extends Component {
                 <Title>ABOUT ME</Title>
                 <Content style={{ justifyContent: "space-between" }}>
                     <div>
-                        <Subtitle style={{ margin: "130px 0px 30px 0px" }}>Who am I?</Subtitle>
+                        <Subtitle style={{ margin: "130px 0px 30px 0px" }}>&lt;Who am I?&nbsp;/&gt;</Subtitle>
                         <P>반갑습니다.</P>
                         <P><b>세종대학교</b>에서 <b>컴퓨터공학</b>을 전공하고 있는 <b>이다예</b>입니다.</P>
                         <P>무엇이든 새로운 것에 흥미를 느낍니다.</P>
@@ -23,7 +23,7 @@ class Body extends Component {
                 <Content>
                     <img src={myImage} width="600px" height="300px" alt="" />
                     <div style={{ marginLeft: "50px"}}>
-                        <Subtitle style={{ margin: "30px 0px 40px 0px" }}>My History</Subtitle>
+                        <Subtitle style={{ margin: "30px 0px 40px 0px" }}>&lt;My History&nbsp;/&gt;</Subtitle>
                         <P style={{ margin: "20px 0px" }}>
                             <big><big><big><b style={{ color: "green", fontFamily: "serif"}}>2020</b></big></big></big>
                             &nbsp;&nbsp;&nbsp;
@@ -51,9 +51,9 @@ class Body extends Component {
 
 const Div = styled.div`
 	background-color: white;
-	padding-left: 12.5%;
-	padding-right: 12.5%;
-	height: 100%;
+    padding: 1px 12.5% 1px 12.5%;
+    height: 100%;
+    margin: 85px 1% 1% 1%;
 `;
 
 const Content = styled.div`
@@ -65,7 +65,7 @@ const Title = styled.p`
 	color: green;
 	font-size: 20px;
 	font-family: Trebuchet;
-	font-weight: bold;
+    font-weight: bold;
 `;
 
 const Subtitle = styled.p`
@@ -81,4 +81,4 @@ const P = styled.p`
 	margin: 3px;
 `;
 
-export default Body;
+export default About;
