@@ -15,14 +15,12 @@ function Header() {
       </div>
     </Div>
   )
-
 }
 
 const Div = styled.div`
   background-color: green;
   height: 85px;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
