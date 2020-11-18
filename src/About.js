@@ -7,8 +7,8 @@ class About extends Component {
     render() {
         return (
             <Div>
-                <Title>____</Title>
-                <Title>ABOUT ME</Title>
+                <Title>________</Title>
+                <Title>ABOUT DAYE</Title>
                 <Content style={{ justifyContent: "space-between" }}>
                     <div>
                         <Subtitle style={{ margin: "130px 0px 30px 0px" }}>&lt;Who am I?&nbsp;/&gt;</Subtitle>
@@ -53,7 +53,7 @@ const Div = styled.div`
 	background-color: white;
     padding: 1px 12.5% 1px 12.5%;
     height: 100%;
-    margin: 85px 1% 1% 1%;
+    margin: 85px 0 1% 0;
 `;
 
 const Content = styled.div`
