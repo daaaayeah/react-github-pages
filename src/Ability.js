@@ -7,7 +7,7 @@ class Ability extends Component {
             <Div>
                 <Title>________</Title>
                 <Title>PROGRAMMING ABILITY</Title>
-                <div style={{ margin: "50px 0px 50px 0px", display: "flex", justifyContent: "space-between" }}>
+                <div style={{ margin: "75px 0px 75px 0px", display: "flex", justifyContent: "space-between" }}>
                     <Box style={{ backgroundColor: "orange", borderRadius: "50%" }}>
                         <Item>C</Item>
                         <Item>C#</Item>
@@ -63,7 +63,6 @@ class Ability extends Component {
 const Div = styled.div`
 	background-color: white;
     padding: 1px 12.5% 1px 12.5%;
-    margin: 1% 0 1% 0;
 `;
 
 const Title = styled.p`
