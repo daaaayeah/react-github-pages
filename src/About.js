@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import programmingImage from "./programming.jpg";
-import myImage from "./I.jpg";
+import programmingImage from "./images/programming.jpg";
+import myImage from "./images/I.jpg";
 
 class About extends Component {
     render() {
