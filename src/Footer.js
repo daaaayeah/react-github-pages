@@ -11,11 +11,13 @@ class Footer extends Component {
 						<P>If you have any questions,</P>
 						<P>please leave your message here.</P>
 					</div>
-					<div style={{ display: "flex" }}>
+					<form style={{ display: "flex" }} id="gfrom" method="POST" data-email="leeda1801@gmail.com"
+					action="https://script.google.com/macros/s/AKfycbykMzAE9cQr-sXXuA9Us0kFKZBVvafcU58CJ8aMBw/exec">
 						<div style={{ margin: "40px 0px", width: "250px" }}>
-							<Input type="text" placeholder="NAME" style={{ width: "190px" }} />
+							<Input type="text" id="name" name="name" placeholder="NAME" style={{ width: "190px" }} />
 							<Input
 								type="text"
+								id="email" name="email"
 								placeholder="E-MAIL"
 								style={{ width: "190px" }}
 							/>
@@ -23,12 +25,13 @@ class Footer extends Component {
 						<div style={{ margin: "40px 0px" }}>
 							<Textarea
 								type="text"
+								id="message" name="message" 
 								placeholder="MESSAGE"
 								style={{ width: "420px", height: "75px" }}
 							/>
 						</div>
 						<Button type="submit">SUBMIT</Button>
-					</div>
+					</form>
 				</div>
 				<CopyRight>
 					COPYRIGHT INFORMATION GOES HERE © 2020. ALL RIGHTS RESERVED
