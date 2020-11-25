@@ -4,7 +4,7 @@ import styled from "styled-components";
 class Footer extends Component {
 	render() {
 		return (
-			<Div>
+			<Div id="contact">
 				<div style={{ display: "flex", justifyContent: "space-between" }}>
 					<div>
 						<Contact>CONTACT</Contact>
@@ -30,7 +30,11 @@ class Footer extends Component {
 								style={{ width: "420px", height: "75px" }}
 							/>
 						</div>
-						<Button type="submit">SUBMIT</Button>
+						<Button type="submit"
+								onSubmit={(e) => {
+									e.preventDefault();
+								}}
+						>SUBMIT</Button>
 					</form>
 				</div>
 				<CopyRight>

@@ -1,17 +1,31 @@
-//import React, { useState } from 'react';
+import React, { useState } from "react";
 import styled from 'styled-components';
 
-function Header() {
+const menuID = ["about", "ability", "portfolio", "contact"];
+
+function Header() { 
+  const [color, setColor] = useState("#c8dbc8");
+
+  const move = (e) => {
+    const index = e.target.value;
+
+    var Location = document.getElementById(menuID[index]).offsetTop;
+    var menuHeight = document.querySelector("#menu").offsetHeight;
+    window.scrollTo({top:Location - menuHeight, behavior:"smooth"})
+
+    setColor("white");
+  }
+
   return (
-    <Div>
+    <Div id="menu">
       <div>
-        <Logo>DEVELOPER</Logo>
+        <Logo value={0} onClick={ move } >DEVELOPER</Logo>
       </div>
       <div>
-        <Menu>About</Menu>
-        <Menu>Ability</Menu>
-        <Menu>Portfolio</Menu>
-        <Menu>Contact</Menu>
+        <Menu value={0} color={color} onClick={ move }>About</Menu>
+        <Menu value={1} onClick={ move }>Ability</Menu>
+        <Menu value={2} onClick={ move }>Portfolio</Menu>
+        <Menu value={3} onClick={ move }>Contact</Menu>
       </div>
     </Div>
   )

@@ -23,7 +23,7 @@ function Portfolio() {
     }
 
     return (
-        <Div>
+        <Div id="portfolio">
             <Title>________</Title>
             <Title>PORTFOLIO</Title>
             <Area>
