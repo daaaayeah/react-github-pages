@@ -1,59 +1,64 @@
+import React, { useEffect } from "react";
 import styled from "styled-components";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 function Ability() {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
+
     return (
         <Div id="ability">
             <Title>________</Title>
             <Title>PROGRAMMING ABILITY</Title>
             <div style={{ margin: "75px 0px 75px 0px", display: "flex", justifyContent: "space-between" }}>
-                <Box style={{ backgroundColor: "orange", borderRadius: "50%" }}>
+                <Box data-aos="flip-left" style={{ backgroundColor: "orange", borderRadius: "50%" }}>
                     <Item>C</Item>
                     <Item>C#</Item>
                 </Box>
-                <Box style={{ backgroundColor: "#ffdead", borderRadius: "50%" }}>
+                <Box data-aos="flip-down" style={{ backgroundColor: "#ffdead", borderRadius: "50%" }}>
                     <Item>HTML</Item>
                     <Item>CSS</Item>
                     <Item>JavaScript</Item>
                     <Item>React</Item>
                 </Box>
-                <Box style={{ backgroundColor: "#ffdead", borderRadius: "50%" }}>
+                <Box data-aos="flip-right" style={{ backgroundColor: "#ffdead", borderRadius: "50%" }}>
                     <Item>Java</Item>
                 </Box>
-                <Box style={{ backgroundColor: "oldlace", borderRadius: "50%" }}>
+                <Box data-aos="flip-up" style={{ backgroundColor: "oldlace", borderRadius: "50%" }}>
                     <Item>OpenGL</Item>
                     <Item>WebGL</Item>
                 </Box>
-                <Box style={{ backgroundColor: "orange", borderRadius: "50%" }}>
+                <Box data-aos="flip-left" style={{ backgroundColor: "orange", borderRadius: "50%" }}>
                     <Item>Python</Item>
                 </Box>
-                <Box style={{ backgroundColor: "white", borderRadius: "50%" }}>
+                <Box data-aos="flip-down" style={{ backgroundColor: "white", borderRadius: "50%" }}>
                     <Item>SQL</Item>
                 </Box>
             </div>
-            <div style={{ margin: "50px 0px 50px 0px" }}>
-                {/* <Subtitle>&lt;사용 툴&nbsp;/&gt;</Subtitle> */}
-                <div style={{ display: "flex", justifyContent: "space-between" }}>
-                    <Box style={{ backgroundColor: "oldlace" }} >
-                        <Item>Android Studio</Item>
-                    </Box>
-                    <Box style={{ backgroundColor: "#ffdead" }} >
-                        <Item>Eclipse</Item>
-                    </Box>
-                    <Box style={{ backgroundColor: "orange" }} >
-                        <Item>Jupyter notebook</Item>
-                    </Box>
-                    <Box style={{ backgroundColor: "oldlace" }} >
-                        <Item>MySQL workbench</Item>
-                    </Box>
-                    <Box style={{ backgroundColor: "white" }} >
-                        <Item>Unity</Item>
-                    </Box>
-                    <Box style={{ backgroundColor: "orange" }} >
-                        <Item>Visual Studio</Item>
-                    </Box>
-                </div>
+            <div style={{ margin: "50px 0px 50px 0px", display: "flex", justifyContent: "space-between" }}>
+                <Box data-aos="flip-down" style={{ backgroundColor: "oldlace" }} >
+                    <Item>Android Studio</Item>
+                </Box>
+                <Box data-aos="flip-left" style={{ backgroundColor: "#ffdead" }} >
+                    <Item>Eclipse</Item>
+                </Box>
+                <Box data-aos="flip-up" style={{ backgroundColor: "orange" }} >
+                    <Item>Jupyter notebook</Item>
+                </Box>
+                <Box data-aos="flip-right" style={{ backgroundColor: "oldlace" }} >
+                    <Item>MySQL workbench</Item>
+                </Box>
+                <Box data-aos="flip-down" style={{ backgroundColor: "white" }} >
+                    <Item>Unity</Item>
+                </Box>
+                <Box data-aos="flip-left" style={{ backgroundColor: "orange" }} >
+                    <Item>Visual Studio</Item>
+                </Box>
             </div>
-        </Div>
+        </Div >
     )
 }
 
