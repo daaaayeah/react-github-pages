@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import image_UI from "./images/UI.jpg";
-import image_elevator from "./images/elevator.jpg";
 import image_database from "./images/database.jpg";
 import image_room from "./images/room.jpg";
 import image_city from "./images/city.jpg";
 import image_game from "./images/game.jpg";
-import image_app from "./images/app.jpg";
+import image_minifin from "./images/minifin.jpg";
 
-const projectTitle = ["[2018] 식단 추천 어플리케이션 'DIET' UI", "[2019] 엘리베이터 회로", "[2020] 캠핑카 대여회사 데이터베이스",
-"[2020] 방 내부 모델링", "[2020] 가상 도시 모델링", "[현재] VR 리듬게임", "[현재] KUSITMS 학술제 프로토타입"];
-const projectImage = [image_UI, image_elevator, image_database, image_room, image_city, image_game, image_app];
-                
+const projectTitle = ["[2018] 식단 추천 어플리케이션 'DIET' UI", "[2020] 캠핑카 대여회사 데이터베이스",
+    "[2020] 방 내부 모델링", "[2020] 가상 도시 모델링", "[2020] VR 리듬게임 '풋풋한 댄스'", "[2020] 안드로이드 어플리케이션 '미니핀'"];
+const projectImage = [image_UI, image_database, image_room, image_city, image_game, image_minifin];
+
 function Portfolio() {
     const [title, setTitle] = useState(0);
     const [image, setImage] = useState(0);
@@ -40,7 +39,6 @@ function Portfolio() {
                 <Button value={3} onClick={onClick}>04</Button>
                 <Button value={4} onClick={onClick}>05</Button>
                 <Button value={5} onClick={onClick}>06</Button>
-                <Button value={6} onClick={onClick}>07</Button>
             </div>
             </Div>
     );
@@ -70,14 +68,16 @@ const Area = styled.div`
 const Button = styled.button`
     color: orange;
     &:hover {
-        color: darkorange;
+        color: white;
+        background-color: orange;
     }
     background-color: white;
     font-size: 20px;
 
-    margin: 30px 10px 10px 10px;
+    margin: 30px 20px 10px 10px;
 
     border-style: none;
+    border-radius: 30%;
     outline: none;
     cursor: pointer;
 `;
