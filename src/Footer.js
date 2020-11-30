@@ -38,7 +38,7 @@ class Footer extends Component {
 					</form>
 				</div>
 				<CopyRight>
-					COPYRIGHT INFORMATION GOES HERE © 2020. ALL RIGHTS RESERVED
+					COPYRIGHT 2020. DAYE ALL RIGHTS RESERVED
 				</CopyRight>
 			</Div>
 		);
