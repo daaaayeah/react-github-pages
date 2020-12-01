@@ -24,20 +24,20 @@ function About() {
                     <Subtitle style={{ margin: "30px 0px 40px 0px" }}>&lt;My History&nbsp;/&gt;</Subtitle>
                     <P style={{ margin: "20px 0px" }}>
                         <big><big><big><b style={{ color: "green", fontFamily: "serif" }}>2020</b></big></big></big>
-                            &nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             한국대학생IT경영학회 22기 회원
                         </P>
                     <P style={{ margin: "20px 0px 10px 0px" }}>
                         <big><big><big><b style={{ color: "green", fontFamily: "serif" }}>2019</b></big></big></big>
-                            &nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             컴퓨터공학과 제 31대 학생회 '.com' 부학생회장
                         </P>
                     <P style={{ marginLeft: "85px" }}>
-                        컴퓨터공학과 제 31대 학생회 '.com' 집부
+                        &nbsp;컴퓨터공학과 제 31대 학생회 '.com' 집부
                         </P>
                     <P style={{ margin: "20px 0px" }}>
                         <big><big><big><b style={{ color: "green", fontFamily: "serif" }}>2018</b></big></big></big>
-                            &nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             세종대학교 입학
                         </P>
                 </div>
@@ -71,9 +71,9 @@ const Subtitle = styled.p`
 
 const P = styled.p`
 	color: black;
-	font-size: 15px;
-    font-family: 고딕;
-	margin: 3px;
+    font-size: 15px;
+    font-family: paybooc-Medium;
+	margin: 5px;
 `;
 
 export default About;

@@ -93,7 +93,7 @@ const Subtitle = styled.p`
 const P = styled.p`
 	color: black;
 	font-size: 15px;
-    font-family: 고딕;
+    font-family: paybooc-Medium;
 	margin-left: 70px;
 `;
 
