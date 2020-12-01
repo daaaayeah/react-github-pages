@@ -49,8 +49,6 @@ function About() {
 const Div = styled.div`
 	background-color: white;
     padding: 1px 12.5% 1px 12.5%;
-    height: 100%;
-    margin-top: 85px;
 `;
 
 const Content = styled.div`

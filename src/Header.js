@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from 'styled-components';
 
-const menuID = ["about", "ability", "portfolio", "contact"];
+const menuID = ["home", "about", "ability", "portfolio", "contact"];
 
 function Header() { 
   const [color, setColor] = useState("#c8dbc8");
@@ -22,10 +22,10 @@ function Header() {
         <Logo value={0} onClick={ move } >DEVELOPER</Logo>
       </div>
       <div>
-        <Menu value={0} color={color} onClick={ move }>About</Menu>
-        <Menu value={1} onClick={ move }>Ability</Menu>
-        <Menu value={2} onClick={ move }>Portfolio</Menu>
-        <Menu value={3} onClick={ move }>Contact</Menu>
+        <Menu value={1} color={color} onClick={ move }>About</Menu>
+        <Menu value={2} onClick={ move }>Ability</Menu>
+        <Menu value={3} onClick={ move }>Portfolio</Menu>
+        <Menu value={4} onClick={ move }>Contact</Menu>
       </div>
     </Div>
   )
