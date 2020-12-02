@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-class Footer extends Component {
+class Footer extends Component { // 새 창 뜨지 않게
 	render() {
 		return (
 			<Div id="contact">

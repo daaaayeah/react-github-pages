@@ -19,7 +19,7 @@ function Header() {
   return (
     <Div id="menu">
       <div>
-        <Logo value={0} onClick={ move } >DEVELOPER</Logo>
+        <Logo value={0} onClick={ move }>DEVELOPER</Logo>
       </div>
       <div>
         <Menu value={1} selectMenu={ menu } onClick={ move }>About</Menu>
@@ -61,7 +61,7 @@ const Logo = styled.button`
 `;
 
 const Menu = styled.button`
-  color: ${({ value, selectMenu }) => (value === selectMenu ? "white" : "#c8dbc8")};
+  color: ${({ value, selectMenu }) => (value === selectMenu ? "white" : "#c8dbc8")};  // 클릭 X -> 스크롤 위치로 색상 변경
   &:hover {
     color: white;
   }
