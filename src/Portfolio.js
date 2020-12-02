@@ -14,11 +14,13 @@ const projectImage = [image_UI, image_database, image_room, image_city, image_ga
 function Portfolio() {
     const [title, setTitle] = useState(0);
     const [image, setImage] = useState(0);
+    const [number, setNumber] = useState(0);
 
     const onClick = (e) => {
         const index = e.target.value;
         setTitle(index);
         setImage(index);
+        setNumber(Number(index));
     }
 
     return (
@@ -33,12 +35,12 @@ function Portfolio() {
                 <Image src={projectImage[image]} width="653px" height="368px" alt=""/>
             </Area>
             <div style={{ marginLeft:"20px" }}>
-                <Button value={0} onClick={onClick}>01</Button>
-                <Button value={1} onClick={onClick}>02</Button>
-                <Button value={2} onClick={onClick}>03</Button>
-                <Button value={3} onClick={onClick}>04</Button>
-                <Button value={4} onClick={onClick}>05</Button>
-                <Button value={5} onClick={onClick}>06</Button>
+                <Button value={0} setNumber={number} onClick={onClick}>01</Button>
+                <Button value={1} setNumber={number} onClick={onClick}>02</Button>
+                <Button value={2} setNumber={number} onClick={onClick}>03</Button>
+                <Button value={3} setNumber={number} onClick={onClick}>04</Button>
+                <Button value={4} setNumber={number} onClick={onClick}>05</Button>
+                <Button value={5} setNumber={number} onClick={onClick}>06</Button>
             </div>
             </Div>
     );
@@ -66,12 +68,12 @@ const Area = styled.div`
 `;
 
 const Button = styled.button`
-    color: orange;
+    color: ${({value, setNumber}) => (value === setNumber ? "white" : "orange")};
+    background-color: ${({value, setNumber}) => (value === setNumber ? "orange" : "white")};
     &:hover {
         color: white;
         background-color: orange;
     }
-    background-color: white;
     font-size: 20px;
 
     margin: 30px 20px 10px 10px;
