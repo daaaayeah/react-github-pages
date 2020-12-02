@@ -40,6 +40,7 @@ const Div = styled.div`
   right: 0;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
   align-items: center;
   padding-left: 12.5%;
   padding-right: 12.5%;
