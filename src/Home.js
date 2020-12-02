@@ -20,7 +20,7 @@ function Home() {
 const Div = styled.div`
 	background-color: green;
     padding: 150px 12.5% 1px 12.5%;
-    height: 665px;
+    height: 500px;
     margin-top: 85px;
 `;
 
