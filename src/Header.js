@@ -4,16 +4,16 @@ import styled from 'styled-components';
 const menuID = ["home", "about", "ability", "portfolio", "contact"];
 
 function Header() { 
-  const [color, setColor] = useState("#c8dbc8");
+  const [menu, setMenu] = useState(0);
 
   const move = (e) => {
     const index = e.target.value;
 
+    setMenu(Number(index));
+
     var Location = document.getElementById(menuID[index]).offsetTop;
     var menuHeight = document.querySelector("#menu").offsetHeight;
     window.scrollTo({top:Location - menuHeight, behavior:"smooth"})
-
-    setColor("white");
   }
 
   return (
@@ -22,10 +22,10 @@ function Header() {
         <Logo value={0} onClick={ move } >DEVELOPER</Logo>
       </div>
       <div>
-        <Menu value={1} color={color} onClick={ move }>About</Menu>
-        <Menu value={2} onClick={ move }>Ability</Menu>
-        <Menu value={3} onClick={ move }>Portfolio</Menu>
-        <Menu value={4} onClick={ move }>Contact</Menu>
+        <Menu value={1} selectMenu={ menu } onClick={ move }>About</Menu>
+        <Menu value={2} selectMenu={ menu } onClick={ move }>Ability</Menu>
+        <Menu value={3} selectMenu={ menu } onClick={ move }>Portfolio</Menu>
+        <Menu value={4} selectMenu={ menu } onClick={ move }>Contact</Menu>
       </div>
     </Div>
   )
@@ -61,7 +61,7 @@ const Logo = styled.button`
 `;
 
 const Menu = styled.button`
-  color: #c8dbc8;
+  color: ${({ value, selectMenu }) => (value === selectMenu ? "white" : "#c8dbc8")};
   &:hover {
     color: white;
   }
