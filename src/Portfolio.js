@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import image_UI from "./images/UI.jpg";
-import image_database from "./images/database.jpg";
+import image_minifin from "./images/minifin.jpg";
+import image_game from "./images/game.jpg";
 import image_room from "./images/room.jpg";
 import image_city from "./images/city.jpg";
-import image_game from "./images/game.jpg";
-import image_minifin from "./images/minifin.jpg";
+import image_database from "./images/database.jpg";
+import image_UI from "./images/UI.jpg";
 
-const projectTitle = ["[2018] 식단 추천 어플리케이션 'DIET' UI", "[2020] 캠핑카 대여회사 데이터베이스",
-    "[2020] 방 내부 모델링", "[2020] 가상 도시 모델링", "[2020] VR 리듬게임 '풋풋한 댄스'", "[2020] 안드로이드 어플리케이션 '미니핀'"];
-const projectImage = [image_UI, image_database, image_room, image_city, image_game, image_minifin];
+const projectTitle = ["[2020] 안드로이드 어플리케이션 '미니핀'", "[2020] VR 리듬게임 '풋풋한 댄스'", "[2020] 방 내부 모델링",
+     "[2020] 가상 도시 모델링", "[2020] 캠핑카 대여회사 데이터베이스", "[2018] 식단 추천 어플리케이션 'DIET' UI"];
+const projectImage = [image_minifin, image_game, image_room, image_city, image_database, image_UI];
 
 function Portfolio() {
     const [title, setTitle] = useState(0);
