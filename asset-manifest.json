@@ -1,21 +1,20 @@
 {
   "files": {
     "main.css": "/react-github-pages/static/css/main.2d102cf2.chunk.css",
-    "main.js": "/react-github-pages/static/js/main.76e020b1.chunk.js",
-    "main.js.map": "/react-github-pages/static/js/main.76e020b1.chunk.js.map",
+    "main.js": "/react-github-pages/static/js/main.b8e7e09d.chunk.js",
+    "main.js.map": "/react-github-pages/static/js/main.b8e7e09d.chunk.js.map",
     "runtime-main.js": "/react-github-pages/static/js/runtime-main.e5ece19d.js",
     "runtime-main.js.map": "/react-github-pages/static/js/runtime-main.e5ece19d.js.map",
     "static/css/2.ec02d681.chunk.css": "/react-github-pages/static/css/2.ec02d681.chunk.css",
-    "static/js/2.a2d19553.chunk.js": "/react-github-pages/static/js/2.a2d19553.chunk.js",
-    "static/js/2.a2d19553.chunk.js.map": "/react-github-pages/static/js/2.a2d19553.chunk.js.map",
+    "static/js/2.6bfbd618.chunk.js": "/react-github-pages/static/js/2.6bfbd618.chunk.js",
+    "static/js/2.6bfbd618.chunk.js.map": "/react-github-pages/static/js/2.6bfbd618.chunk.js.map",
     "static/js/3.1d66d98d.chunk.js": "/react-github-pages/static/js/3.1d66d98d.chunk.js",
     "static/js/3.1d66d98d.chunk.js.map": "/react-github-pages/static/js/3.1d66d98d.chunk.js.map",
     "index.html": "/react-github-pages/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/react-github-pages/static/css/2.ec02d681.chunk.css.map",
     "static/css/main.2d102cf2.chunk.css.map": "/react-github-pages/static/css/main.2d102cf2.chunk.css.map",
-    "static/js/2.a2d19553.chunk.js.LICENSE.txt": "/react-github-pages/static/js/2.a2d19553.chunk.js.LICENSE.txt",
+    "static/js/2.6bfbd618.chunk.js.LICENSE.txt": "/react-github-pages/static/js/2.6bfbd618.chunk.js.LICENSE.txt",
     "static/media/I.603f7fc8.jpg": "/react-github-pages/static/media/I.603f7fc8.jpg",
-    "static/media/UI.3d7f3b18.jpg": "/react-github-pages/static/media/UI.3d7f3b18.jpg",
     "static/media/city.c2ab509d.jpg": "/react-github-pages/static/media/city.c2ab509d.jpg",
     "static/media/database.27599f27.jpg": "/react-github-pages/static/media/database.27599f27.jpg",
     "static/media/game.e99cc04b.jpg": "/react-github-pages/static/media/game.e99cc04b.jpg",
@@ -26,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.e5ece19d.js",
     "static/css/2.ec02d681.chunk.css",
-    "static/js/2.a2d19553.chunk.js",
+    "static/js/2.6bfbd618.chunk.js",
     "static/css/main.2d102cf2.chunk.css",
-    "static/js/main.76e020b1.chunk.js"
+    "static/js/main.b8e7e09d.chunk.js"
   ]
 }
