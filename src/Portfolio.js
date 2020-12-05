@@ -5,20 +5,24 @@ import image_game from "./images/game.jpg";
 import image_room from "./images/room.jpg";
 import image_city from "./images/city.jpg";
 import image_database from "./images/database.jpg";
-import image_UI from "./images/UI.jpg";
 
 const projectTitle = ["[2020] 안드로이드 어플리케이션 '미니핀'", "[2020] VR 리듬게임 '풋풋한 댄스'", "[2020] 방 내부 모델링",
-     "[2020] 가상 도시 모델링", "[2020] 캠핑카 대여회사 데이터베이스", "[2018] 식단 추천 어플리케이션 'DIET' UI"];
-const projectImage = [image_minifin, image_game, image_room, image_city, image_database, image_UI];
+     "[2020] 가상 도시 모델링", "[2020] 캠핑카 대여회사 데이터베이스"];
+const projectInfo1 = ["✔ 한국대학생IT경영학회 학술제 대상", "✔ 세종대학교 컴퓨터공학과 학술제 대상", "✔ Computer Graphics 개인 프로젝트",
+     "✔ Computer Graphics 개인 프로젝트", "✔ Database 팀 프로젝트"];
+const projectInfo2 = ["✔ Android Studio - Java", "✔ Unity - C# Script", "✔ OpenGL", "✔ WebGL", "✔ mySQL, Eclipse"];
+const projectImage = [image_minifin, image_game, image_room, image_city, image_database];
 
 function Portfolio() {
     const [title, setTitle] = useState(0);
+    const [info, setInfo] = useState(0);
     const [image, setImage] = useState(0);
     const [number, setNumber] = useState(0);
 
     const onClick = (e) => {
         const index = e.target.value;
         setTitle(index);
+        setInfo(index);
         setImage(index);
         setNumber(Number(index));
     }
@@ -30,7 +34,9 @@ function Portfolio() {
             <Area>
                 <div>
                     <Subtitle>Projects</Subtitle>
-                    <P>{projectTitle[title]}</P>
+                    <P1>{projectTitle[title]}</P1>
+                    <P2>{projectInfo1[info]}</P2>
+                    <P2>{projectInfo2[info]}</P2>
                 </div>
                 <Image src={projectImage[image]} width="653px" height="368px" alt=""/>
             </Area>
@@ -40,7 +46,6 @@ function Portfolio() {
                 <Button value={2} setNumber={number} onClick={onClick}>03</Button>
                 <Button value={3} setNumber={number} onClick={onClick}>04</Button>
                 <Button value={4} setNumber={number} onClick={onClick}>05</Button>
-                <Button value={5} setNumber={number} onClick={onClick}>06</Button>
             </div>
             </Div>
     );
@@ -75,8 +80,9 @@ const Button = styled.button`
         background-color: orange;
     }
     font-size: 20px;
+    height: 30px;
 
-    margin: 30px 20px 10px 10px;
+    margin: 25px 30px 10px 15px;
 
     border-style: none;
     border-radius: 30%;
@@ -85,22 +91,30 @@ const Button = styled.button`
 `;
 
 const Subtitle = styled.p`
-	color: black;
+	color: green;
 	font-size: 25px;
     font-weight: bold;
-    padding-top: 190px;
-	margin-left: 70px;
+    padding-top: 150px;
+	margin-left: 50px;
+    text-shadow: 2px 2px 1px lightgray;
 `;
 
-const P = styled.p`
+const P1 = styled.p`
+	color: black;
+	font-size: 16px;
+    font-family: paybooc-Bold;
+    margin: 0px 0px 10px 50px;
+`;
+
+const P2 = styled.p`
 	color: black;
 	font-size: 15px;
     font-family: paybooc-Medium;
-	margin-left: 70px;
+    margin: 0px 0px 5px 50px;
 `;
 
 const Image = styled.img`
-    margin-top: 30px;
+    margin-top: 55px;
     margin-right: 55px;
     box-shadow: 5px 5px 5px gainsboro;
 `;
