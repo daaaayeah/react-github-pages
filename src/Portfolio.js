@@ -6,15 +6,38 @@ import image_room from "./images/room.jpg";
 import image_city from "./images/city.jpg";
 import image_database from "./images/database.jpg";
 
-const projectTitle = ["[2020] 안드로이드 어플리케이션 '미니핀'", "[2020] VR 리듬게임 '풋풋한 댄스'", "[2020] 방 내부 모델링",
-     "[2020] 가상 도시 모델링", "[2020] 캠핑카 대여회사 데이터베이스"];
-const projectInfo1 = ["✔ 한국대학생IT경영학회 학술제 대상", "✔ 세종대학교 컴퓨터공학과 학술제 대상", "✔ Computer Graphics 개인 프로젝트",
-     "✔ Computer Graphics 개인 프로젝트", "✔ Database 팀 프로젝트"];
-const projectInfo2 = ["✔ Android Studio - Java", "✔ Unity - C# Script", "✔ OpenGL", "✔ WebGL", "✔ mySQL, Eclipse"];
-const projectImage = [image_minifin, image_game, image_room, image_city, image_database];
-const projectLink = ["https://github.com/daaaayeah/MINI-FIN.git", "https://github.com/daaaayeah/FOOTFOOT-DANCE.git",
-     "https://github.com/daaaayeah/Computer-Graphics", "https://github.com/daaaayeah/Computer-Graphics",
-     "https://github.com/daaaayeah/Database/tree/main/Camping_Car_Company"];
+const projectList = [
+    {
+        title: "[2020-하] 안드로이드 어플리케이션 '미니핀'",
+        info: ["✔ 한국대학생IT경영학회 학술제 대상", "✔ Android Studio - Java"],
+        link: "https://github.com/daaaayeah/MINI-FIN.git",
+        image: image_minifin
+    },
+    {
+        title: "[2020-하] VR 리듬게임 '풋풋한 댄스'",
+        info: ["✔ 세종대학교 컴퓨터공학과 학술제 대상", "✔ Unity - C# Script"],
+        link: "https://github.com/daaaayeah/FOOTFOOT-DANCE.git",
+        image: image_game
+    },
+    {
+        title: "[2020-상] 방 내부 모델링",
+        info: ["✔ Computer Graphics 개인 프로젝트", "✔ OpenGL"],
+        link: "https://github.com/daaaayeah/Computer-Graphics",
+        image: image_room
+    },
+    {
+        title: "[2020-상] 가상 도시 모델링",
+        info: ["✔ Computer Graphics 개인 프로젝트", "✔ WebGL"],
+        link: "https://github.com/daaaayeah/Computer-Graphics",
+        image: image_city
+    },
+    {
+        title: "[2020-상] 캠핑카 대여회사 데이터베이스",
+        info: ["✔ Database 팀 프로젝트", "✔ mySQL, Eclipse"],
+        link: "https://github.com/daaaayeah/Database/tree/main/Camping_Car_Company",
+        image: image_database
+    },
+];
 
 function Portfolio() {
     const [number, setNumber] = useState(0);
@@ -24,6 +47,8 @@ function Portfolio() {
         setNumber(Number(index));
     }
 
+    const project = projectList[number];
+
     return (
         <Div id="portfolio">
             <Title>________</Title>
@@ -31,18 +56,29 @@ function Portfolio() {
             <Area>
                 <div>
                     <Subtitle>Projects</Subtitle>
-                    <P1>{projectTitle[number]}</P1>
-                    <P2>{projectInfo1[number]}</P2>
-                    <P2>{projectInfo2[number]}</P2>
+                    <P1>{project.title}</P1>
+                    {project.info.map((v) => (
+                        <P2>{v}</P2>
+                    ))}
                 </div>
-                <a href={projectLink[number]} target="_blank" rel="noreferrer"><Image src={projectImage[number]} width="653px" height="368px" alt=""/></a>
+                <a href={project.link} target="_blank" rel="noreferrer">
+                    <Image src={project.image} width="653px" height="368px" alt=""/>
+                </a>
             </Area>
             <div style={{ marginLeft:"20px" }}>
-                <Button value={0} setNumber={number} onClick={onClick}>01</Button>
-                <Button value={1} setNumber={number} onClick={onClick}>02</Button>
-                <Button value={2} setNumber={number} onClick={onClick}>03</Button>
-                <Button value={3} setNumber={number} onClick={onClick}>04</Button>
-                <Button value={4} setNumber={number} onClick={onClick}>05</Button>
+                {
+                    [
+                        {key: 0, value: "01"},
+                        {key: 1, value: "02"},
+                        {key: 2, value: "03"},
+                        {key: 3, value: "04"},
+                        {key: 4, value: "05"},
+                    ].map((v) => (
+                        <Button value={v.key} setNumber={number} onClick={onClick}>
+                            {v.value}
+                        </Button>
+                    ))
+                }
             </div>
             </Div>
     );
