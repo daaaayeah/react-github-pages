@@ -12,18 +12,15 @@ const projectInfo1 = ["✔ 한국대학생IT경영학회 학술제 대상", "✔
      "✔ Computer Graphics 개인 프로젝트", "✔ Database 팀 프로젝트"];
 const projectInfo2 = ["✔ Android Studio - Java", "✔ Unity - C# Script", "✔ OpenGL", "✔ WebGL", "✔ mySQL, Eclipse"];
 const projectImage = [image_minifin, image_game, image_room, image_city, image_database];
+const projectLink = ["https://github.com/daaaayeah/MINI-FIN.git", "https://github.com/daaaayeah/FOOTFOOT-DANCE.git",
+     "https://github.com/daaaayeah/Computer-Graphics", "https://github.com/daaaayeah/Computer-Graphics",
+     "https://github.com/daaaayeah/Database/tree/main/Camping_Car_Company"];
 
 function Portfolio() {
-    const [title, setTitle] = useState(0);
-    const [info, setInfo] = useState(0);
-    const [image, setImage] = useState(0);
     const [number, setNumber] = useState(0);
 
     const onClick = (e) => {
         const index = e.target.value;
-        setTitle(index);
-        setInfo(index);
-        setImage(index);
         setNumber(Number(index));
     }
 
@@ -34,11 +31,11 @@ function Portfolio() {
             <Area>
                 <div>
                     <Subtitle>Projects</Subtitle>
-                    <P1>{projectTitle[title]}</P1>
-                    <P2>{projectInfo1[info]}</P2>
-                    <P2>{projectInfo2[info]}</P2>
+                    <P1>{projectTitle[number]}</P1>
+                    <P2>{projectInfo1[number]}</P2>
+                    <P2>{projectInfo2[number]}</P2>
                 </div>
-                <Image src={projectImage[image]} width="653px" height="368px" alt=""/>
+                <a href={projectLink[number]} target="_blank" rel="noreferrer"><Image src={projectImage[number]} width="653px" height="368px" alt=""/></a>
             </Area>
             <div style={{ marginLeft:"20px" }}>
                 <Button value={0} setNumber={number} onClick={onClick}>01</Button>
