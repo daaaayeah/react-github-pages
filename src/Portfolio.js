@@ -9,13 +9,13 @@ import image_database from "./images/database.jpg";
 const projectList = [
     {
         title: "[2020-하] 안드로이드 어플리케이션 '미니핀'",
-        info: ["✔ 한국대학생IT경영학회 학술제 대상", "✔ Android Studio - Java"],
+        info: ["✔ 한국대학생IT경영학회 22기 학술제 대상", "✔ Android Studio - Java"],
         link: "https://github.com/daaaayeah/MINI-FIN.git",
         image: image_minifin
     },
     {
         title: "[2020-하] VR 리듬게임 '풋풋한 댄스'",
-        info: ["✔ 세종대학교 컴퓨터공학과 학술제 대상", "✔ Unity - C# Script"],
+        info: ["✔ 세종대학교 컴퓨터공학과 제 7회 학술제 대상", "✔ 기획 / Unity - C# Script"],
         link: "https://github.com/daaaayeah/FOOTFOOT-DANCE.git",
         image: image_game
     },
