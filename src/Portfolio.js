@@ -33,7 +33,7 @@ const projectList = [
     },
     {
         title: "[2020-상] 캠핑카 대여회사 데이터베이스",
-        info: ["✔ Database 팀 프로젝트", "✔ mySQL, Eclipse"],
+        info: ["✔ Database 팀 프로젝트", "✔ mySQL / Eclipse"],
         link: "https://github.com/daaaayeah/Database/tree/main/Camping_Car_Company",
         image: image_database
     },
