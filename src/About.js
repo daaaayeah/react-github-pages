@@ -1,14 +1,22 @@
+import React, { useEffect } from "react";
 import styled from "styled-components";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 import programmingImage from "./images/programming.jpg";
 import myImage from "./images/I.jpg";
 
 function About() {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
+
     return (
         <Div id="about">
             <Title>________</Title>
             <Title>ABOUT DAYE</Title>
             <Content style={{ justifyContent: "space-between" }}>
-                <div>
+                <div data-aos="fade-right" data-aos-duration="1500">
                     <Subtitle style={{ margin: "130px 0px 30px 0px" }}>&lt;Who am I?&nbsp;/&gt;</Subtitle>
                     <P>반갑습니다.</P>
                     <P><b>세종대학교</b>에서 <b>컴퓨터공학</b>을 전공하고 있는 <b>이다예</b>입니다.</P>
@@ -16,11 +24,11 @@ function About() {
                     <P>끊임없이 변화하는 프로그래밍의 세상 속에서 오랫동안 공부하며</P>
                     <P><b>세계를 움직이는 사람</b>이 되고 싶습니다.</P>
                 </div>
-                <img src={programmingImage} width="600px" height="300px" alt="" />
+                <img data-aos="fade-left" data-aos-duration="1500" src={programmingImage} width="600px" height="300px" alt="" />
             </Content>
             <Content>
-                <img src={myImage} width="600px" height="300px" alt="" />
-                <div style={{ marginLeft: "50px" }}>
+                <img data-aos="fade-right" data-aos-duration="2000" src={myImage} width="600px" height="300px" alt="" />
+                <div data-aos="fade-left" data-aos-duration="2000" style={{ marginLeft: "50px" }}>
                     <Subtitle style={{ margin: "30px 0px 40px 0px" }}>&lt;My History&nbsp;/&gt;</Subtitle>
                     <P style={{ margin: "20px 0px" }}>
                         <big><big><big><b style={{ color: "green", fontFamily: "serif" }}>2020</b></big></big></big>
