@@ -20,6 +20,7 @@ function Footer() {
                     method="POST"
                     data-email="leeda1801@gmail.com"
                     action="https://script.google.com/macros/s/AKfycbykMzAE9cQr-sXXuA9Us0kFKZBVvafcU58CJ8aMBw/exec"
+                    onSubmit={onSubmit}
                 >
                     <div style={{ margin: "40px 0px", width: "250px" }}>
                         <Input
@@ -46,9 +47,7 @@ function Footer() {
                             style={{ width: "420px", height: "75px" }}
                         />
                     </div>
-                    <Button type="submit" onSubmit={onSubmit}>
-                        SUBMIT
-                    </Button>
+                    <Submit type="submit" value="SUBMIT" />
                 </form>
             </div>
             <CopyRight>COPYRIGHT 2020. DAYE ALL RIGHTS RESERVED</CopyRight>
@@ -107,7 +106,7 @@ const Textarea = styled.textarea`
     outline: none;
 `;
 
-const Button = styled.button`
+const Submit = styled.input`
     color: green;
     background-color: #c8dbc8;
     font-size: 15px;
