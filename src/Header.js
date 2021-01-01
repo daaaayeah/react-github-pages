@@ -4,47 +4,34 @@ import styled from "styled-components";
 const menuID = ["home", "about", "ability", "portfolio", "contact"];
 
 function Header() {
-    const [menu, setMenu] = useState(0);
-    const [menuColor, setMenuColor] = useState("home");
-
     const move = (e) => {
         const index = e.target.value;
-
-        setMenu(Number(index));
 
         var Location = document.getElementById(menuID[index]).offsetTop;
         var menuHeight = document.querySelector("#menu").offsetHeight;
         window.scrollTo({ top: Location - menuHeight, behavior: "smooth" });
     };
 
-    useEffect(() => {
-        let curLoc;
-        curLoc = window.scrollY;
+    const useScroll = () => {
+        const [state, setState] = useState({
+            x: 0,
+            y: 0,
+        });
 
-        if (
-            curLoc >= document.getElementById("home") &&
-            curLoc < document.getElementById("about")
-        ) {
-            setMenuColor("home");
-        } else if (
-            curLoc >= document.getElementById("about") &&
-            curLoc < document.getElementById("ability")
-        ) {
-            setMenuColor("about");
-        } else if (
-            curLoc >= document.getElementById("ability") &&
-            curLoc < document.getElementById("portfolio")
-        ) {
-            setMenuColor("ability");
-        } else if (
-            curLoc >= document.getElementById("portfolio") &&
-            curLoc < document.getElementById("contact")
-        ) {
-            setMenuColor("portfolio");
-        } else {
-            setMenuColor("contact");
-        }
-    }, []);
+        const onScroll = () => {
+            setState({ y: window.scrollY, x: window.scrollX });
+        };
+
+        useEffect(() => {
+            window.addEventListener("scroll", onScroll);
+            return () => window.removeEventListener("scroll", onScroll);
+        }, []);
+
+        return state;
+    };
+
+    const { y } = useScroll();
+    console.log(y);
 
     return (
         <Div id="menu">
@@ -56,33 +43,43 @@ function Header() {
             <div>
                 <Menu
                     value={1}
-                    selectMenu={menu}
-                    menuColor={menuColor}
                     onClick={move}
+                    style={{
+                        color:
+                            y >= 651.2000122070312 && y < 1600.800048828125
+                                ? "white"
+                                : "#c8dbc8",
+                    }}
                 >
                     About
                 </Menu>
                 <Menu
                     value={2}
-                    selectMenu={menu}
-                    menuColor={menuColor}
                     onClick={move}
+                    style={{
+                        color:
+                            y >= 1600.800048828125 && y < 2196
+                                ? "white"
+                                : "#c8dbc8",
+                    }}
                 >
                     Ability
                 </Menu>
                 <Menu
                     value={3}
-                    selectMenu={menu}
-                    menuColor={menuColor}
                     onClick={move}
+                    style={{
+                        color: y >= 2196 && y < 2432 ? "white" : "#c8dbc8",
+                    }}
                 >
                     Portfolio
                 </Menu>
                 <Menu
                     value={4}
-                    selectMenu={menu}
-                    menuColor={menuColor}
                     onClick={move}
+                    style={{
+                        color: y >= 2432 ? "white" : "#c8dbc8",
+                    }}
                 >
                     Contact
                 </Menu>
@@ -121,8 +118,7 @@ const Logo = styled.button`
 `;
 
 const Menu = styled.button`
-    color: ${({ value, selectMenu, menuColor }) =>
-        value === selectMenu || value === menuColor ? "white" : "#c8dbc8"};
+    color: #c8dbc8;
     &:hover {
         color: white;
     }
