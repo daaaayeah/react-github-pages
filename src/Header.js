@@ -2,24 +2,26 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const menuID = ["home", "about", "ability", "portfolio", "contact"];
+var menuLoca = [];
 
 function Header() {
     const move = (e) => {
         const index = e.target.value;
 
         var Location = document.getElementById(menuID[index]).offsetTop;
+        menuLoca[index] = Location;
+
         var menuHeight = document.querySelector("#menu").offsetHeight;
         window.scrollTo({ top: Location - menuHeight, behavior: "smooth" });
     };
 
     const useScroll = () => {
         const [state, setState] = useState({
-            x: 0,
             y: 0,
         });
 
         const onScroll = () => {
-            setState({ y: window.scrollY, x: window.scrollX });
+            setState({ y: window.scrollY });
         };
 
         useEffect(() => {
@@ -31,7 +33,6 @@ function Header() {
     };
 
     const { y } = useScroll();
-    console.log(y);
 
     return (
         <Div id="menu">
@@ -46,7 +47,7 @@ function Header() {
                     onClick={move}
                     style={{
                         color:
-                            y >= 651.2000122070312 && y < 1600.800048828125
+                            y >= menuLoca[1] && y < menuLoca[2]
                                 ? "white"
                                 : "#c8dbc8",
                     }}
@@ -58,7 +59,7 @@ function Header() {
                     onClick={move}
                     style={{
                         color:
-                            y >= 1600.800048828125 && y < 2196
+                            y >= menuLoca[2] && y < menuLoca[3]
                                 ? "white"
                                 : "#c8dbc8",
                     }}
@@ -69,7 +70,10 @@ function Header() {
                     value={3}
                     onClick={move}
                     style={{
-                        color: y >= 2196 && y < 2432 ? "white" : "#c8dbc8",
+                        color:
+                            y >= menuLoca[3] && y < menuLoca[4]
+                                ? "white"
+                                : "#c8dbc8",
                     }}
                 >
                     Portfolio
@@ -78,7 +82,7 @@ function Header() {
                     value={4}
                     onClick={move}
                     style={{
-                        color: y >= 2432 ? "white" : "#c8dbc8",
+                        color: y >= menuLoca[4] ? "white" : "#c8dbc8",
                     }}
                 >
                     Contact
