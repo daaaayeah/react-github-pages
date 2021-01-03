@@ -2,15 +2,25 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const menuID = ["home", "about", "ability", "portfolio", "contact"];
-var menuLoca = [];
+var startLoca = [];
+var endLoca = [];
 
 function Header() {
+    useEffect(() => {
+        for (let i = 0; i < 5; i++) {
+            startLoca[i] =
+                document.getElementById(menuID[i]).offsetTop -
+                document.querySelector("#menu").offsetHeight;
+            endLoca[i] =
+                startLoca[i] +
+                0.6 * document.getElementById(menuID[i]).offsetHeight;
+        }
+    });
+
     const move = (e) => {
         const index = e.target.value;
 
         var Location = document.getElementById(menuID[index]).offsetTop;
-        menuLoca[index] = Location;
-
         var menuHeight = document.querySelector("#menu").offsetHeight;
         window.scrollTo({ top: Location - menuHeight, behavior: "smooth" });
     };
@@ -47,7 +57,7 @@ function Header() {
                     onClick={move}
                     style={{
                         color:
-                            y >= menuLoca[1] && y < menuLoca[2]
+                            y >= startLoca[1] && y < endLoca[1]
                                 ? "white"
                                 : "#c8dbc8",
                     }}
@@ -59,7 +69,7 @@ function Header() {
                     onClick={move}
                     style={{
                         color:
-                            y >= menuLoca[2] && y < menuLoca[3]
+                            y >= startLoca[2] && y < endLoca[2]
                                 ? "white"
                                 : "#c8dbc8",
                     }}
@@ -71,7 +81,7 @@ function Header() {
                     onClick={move}
                     style={{
                         color:
-                            y >= menuLoca[3] && y < menuLoca[4]
+                            y >= startLoca[3] && y < startLoca[3] + 250
                                 ? "white"
                                 : "#c8dbc8",
                     }}
@@ -82,7 +92,7 @@ function Header() {
                     value={4}
                     onClick={move}
                     style={{
-                        color: y >= menuLoca[4] ? "white" : "#c8dbc8",
+                        color: y >= startLoca[3] + 250 ? "white" : "#c8dbc8",
                     }}
                 >
                     Contact
