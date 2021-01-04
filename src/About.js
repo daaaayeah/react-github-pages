@@ -55,66 +55,78 @@ function About() {
                 <div
                     data-aos="fade-left"
                     data-aos-duration="2000"
-                    style={{ marginLeft: "50px" }}
+                    style={{ marginLeft: "75px" }}
                 >
-                    <Subtitle style={{ margin: "25px 0px 40px 0px" }}>
+                    <Subtitle style={{ margin: "0px 0px 30px 0px" }}>
                         &lt;My History&nbsp;/&gt;
                     </Subtitle>
                     <P style={{ margin: "20px 0px 10px 0px" }}>
                         <big>
                             <big>
-                                <big>
-                                    <b
-                                        style={{
-                                            color: "green",
-                                            fontFamily: "serif",
-                                        }}
-                                    >
-                                        2020
-                                    </b>
-                                </big>
+                                <b
+                                    style={{
+                                        color: "green",
+                                        fontFamily: "serif",
+                                    }}
+                                >
+                                    2021
+                                </b>
                             </big>
                         </big>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (주)보바 프론트엔드
-                        개발자
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D&amp;D 4기 회원 (Web
+                        Front-End 개발)
                     </P>
-                    <P style={{ marginLeft: "85px" }}>
-                        &nbsp;한국대학생IT경영학회 22기 회원
+                    <P style={{ marginLeft: "77.5px" }}>
+                        (주)보바 Front-End 개발자
                     </P>
                     <P style={{ margin: "20px 0px 10px 0px" }}>
                         <big>
                             <big>
-                                <big>
-                                    <b
-                                        style={{
-                                            color: "green",
-                                            fontFamily: "serif",
-                                        }}
-                                    >
-                                        2019
-                                    </b>
-                                </big>
+                                <b
+                                    style={{
+                                        color: "green",
+                                        fontFamily: "serif",
+                                    }}
+                                >
+                                    2020
+                                </b>
+                            </big>
+                        </big>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (주)보바 Front-End 개발자
+                    </P>
+                    <P style={{ marginLeft: "77.5px" }}>
+                        한국대학생IT경영학회 22기 회원 (Android 개발)
+                    </P>
+                    <P style={{ margin: "20px 0px 10px 0px" }}>
+                        <big>
+                            <big>
+                                <b
+                                    style={{
+                                        color: "green",
+                                        fontFamily: "serif",
+                                    }}
+                                >
+                                    2019
+                                </b>
                             </big>
                         </big>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 컴퓨터공학과 제 31대
                         학생회 '.com' 부학생회장
                     </P>
-                    <P style={{ marginLeft: "85px" }}>
-                        &nbsp;컴퓨터공학과 제 31대 학생회 '.com' 집부
+                    <P style={{ marginLeft: "77.5px" }}>
+                        컴퓨터공학과 제 31대 학생회 '.com' 집부
                     </P>
                     <P style={{ margin: "20px 0px" }}>
                         <big>
                             <big>
-                                <big>
-                                    <b
-                                        style={{
-                                            color: "green",
-                                            fontFamily: "serif",
-                                        }}
-                                    >
-                                        2018
-                                    </b>
-                                </big>
+                                <b
+                                    style={{
+                                        color: "green",
+                                        fontFamily: "serif",
+                                    }}
+                                >
+                                    2018
+                                </b>
                             </big>
                         </big>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 세종대학교 입학
@@ -132,7 +144,7 @@ const Div = styled.div`
 
 const Content = styled.div`
     display: flex;
-    margin: 50px 0px 50px 0px;
+    margin: 75px 0px 50px 0px;
 `;
 
 const Title = styled.p`
