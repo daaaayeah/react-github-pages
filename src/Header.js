@@ -15,7 +15,7 @@ function Header() {
                 startLoca[i] +
                 0.6 * document.getElementById(menuID[i]).offsetHeight;
         }
-    });
+    }, []);
 
     const move = (e) => {
         const index = e.target.value;
@@ -69,7 +69,7 @@ function Header() {
                     onClick={move}
                     style={{
                         color:
-                            y >= startLoca[2] && y < endLoca[2]
+                            y >= endLoca[1] && y < endLoca[2]
                                 ? "white"
                                 : "#c8dbc8",
                     }}
@@ -81,7 +81,7 @@ function Header() {
                     onClick={move}
                     style={{
                         color:
-                            y >= startLoca[3] && y < startLoca[3] + 250
+                            y >= endLoca[2] && y < startLoca[3] + 250
                                 ? "white"
                                 : "#c8dbc8",
                     }}
