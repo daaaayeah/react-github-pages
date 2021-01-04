@@ -65,7 +65,7 @@ function Ability() {
             </div>
             <div
                 style={{
-                    margin: "50px 0px 50px 0px",
+                    margin: "50px 0px 80px 0px",
                     display: "flex",
                     justifyContent: "space-between",
                 }}
